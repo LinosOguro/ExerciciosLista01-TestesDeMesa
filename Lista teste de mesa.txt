@@ -4,7 +4,7 @@ addFirst(0)	  [0]
 addFirst(1)	  [1,0]
 addFirst(4)	  [4,1,0]
 addFirst(3)	  [3,4,1,0]
-addFirst(16)[16,3,4,1,0]
+addFirst(16)  [16,3,4,1,0]
 addFirst(50	  [5,16,3,4,1,0]
 addFirst(36)	[36,5,16,3,4,1,0]
 get(Size() - 1)		    		            0
