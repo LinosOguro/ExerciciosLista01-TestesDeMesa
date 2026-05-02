@@ -6,13 +6,13 @@ addFirst(4)	  [4,1,0]
 addFirst(3)	  [3,4,1,0]
 addFirst(16)  [16,3,4,1,0]
 addFirst(50	  [5,16,3,4,1,0]
-addFirst(36)	[36,5,16,3,4,1,0]
-get(Size() - 1)		    		            0
-removeLast()	 [36,5,16,3,4,1]
-addFirst(64)	[64,36,5,16,3,4,1]
-get(Size() - 1)				                1
-removeLast()	[64,36,5,16,3,4]
-Size()					                      Size = 6
+addFirst(36)  [36,5,16,3,4,1,0]
+get(Size() - 1)		    		             0
+removeLast()  [36,5,16,3,4,1]
+addFirst(64)  [64,36,5,16,3,4,1]
+get(Size() - 1)				                 1
+removeLast()  [64,36,5,16,3,4]
+Size()					                       Size = 6
 
 ==================================================
 
