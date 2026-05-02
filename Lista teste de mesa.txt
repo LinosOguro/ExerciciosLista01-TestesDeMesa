@@ -1,0 +1,126 @@
+1.a)
+Console		Lista			Print
+addFirst(0)	[0]
+addFirst(1)	[1,0]
+addFirst(4)	[4,1,0]
+addFirst(3)	[3,4,1,0]
+addFirst(16)	[16,3,4,1,0]
+addFirst(50	[5,16,3,4,1,0]
+addFirst(36)	[36,5,16,3,4,1,0]
+get(Size() - 1)				0
+removeLast()	[36,5,16,3,4,1]
+addFirst(64)	[64,36,5,16,3,4,1]
+get(Size() - 1)				1
+removeLast()	[64,36,5,16,3,4]
+Size()					Size = 6
+
+==================================================
+
+1.b)
+Console		Lista			Print
+addFirst(200)	[200]
+addLast(151)	[200,151]
+addLast(152)	[200,151,152]
+addLast(153)	[200,151,152,153]
+addLast(154)	[200,151,152,153,154]
+get(0)					200
+remevoFirst()	[151,152,153,154]
+addLast(156)	[151,152,153,154,156]	
+get(0)					151
+removeFirst()	[152,153,154,156]
+addLast(158)	[152,153,154,156,158]
+get(0)					152
+removeFirst()	[153,154,156,158]
+addLast(160)	[153,154,156,158,160]
+get(0)					153
+removeFirst()	[154,156,158,160]
+addLast(162)	[154,156,158,160,162]
+get(0)					154
+removeFirst()	[156,158,160,162]
+addlast(164)	[156,158,160,162,164]
+Size()					5
+
+==================================================
+
+3.a) 
+Inverter lista [3,5,18,12,9,7,6,2,13,4,16]
+Método utilizado: Pilha
+
+// Remover da lista e adicionar na fila
+Console		Valor	Lista / Pilha
+
+l.removeFirst()	3	[5,18,12,9,7,6,2,13,4,16]
+p.push(valor)		[3]
+
+l.removeFirst()	5	[18,12,9,7,6,2,13,4,16]
+p.push(valor)		[5,3]
+
+l.removeFirst()	18	[12,9,7,6,2,13,4,16]
+p.push(valor)		[18,5,3]
+
+l.removeFirst()	12	[9,7,6,2,13,4,16]
+p.push(valor)		[12,18,5,3]
+
+l.removeFirst()	9	[7,6,2,13,4,16]
+p.push(valor)		[9,12,18,5,3]
+
+l.removeFirst()	9	[7,6,2,13,4,16]
+p.push(valor)		[9,12,18,5,3]
+
+l.removeFirst()	7	[6,2,13,4,16]
+p.push(valor)		[7,9,12,18,5,3]	
+
+l.removeFirst()	6	[2,13,4,16]
+p.push(valor)		[6,7,9,12,18,5,3]
+
+l.removeFirst()	2	[13,4,16]
+p.push(valor)		[2,6,7,9,12,18,5,3]
+
+l.removeFirst()	13	[4,16]
+p.push(valor)		[13,2,6,7,9,12,18,5,3]
+
+l.removeFirst()	4	[16]
+p.push(valor)		[4,13,2,6,7,9,12,18,5,3]
+
+l.removeFirst()	4	[16]
+p.push(valor)		[4,13,2,6,7,9,12,18,5,3]
+
+l.removeFirst()	16	[]
+p.push(valor)		[16,4,13,2,6,7,9,12,18,5,3]
+
+---------------------------------------------------
+// Retorna os valores da pilha para lista
+
+Console			Valor	Lista / Pilha
+p.pop()			16	[4,13,2,6,7,9,12,18,5,3]
+l.addLast(valor)		[16]
+
+p.pop()			4	[13,2,6,7,9,12,18,5,3]
+l.addLast(valor)		[16,4]
+
+p.pop()			13	[2,6,7,9,12,18,5,3]
+l.addLast(valor)		[16,4,13]
+
+p.pop()			2	[6,7,9,12,18,5,3]
+l.addLast(valor)		[16,4,13,2]
+
+p.pop()			6	[7,9,12,18,5,3]
+l.addLast(valor)		[16,4,13,2,6]
+
+p.pop()			7	[9,12,18,5,3]
+l.addLast(valor)		[16,4,13,2,6,7]
+
+p.pop()			9	[12,18,5,3]
+l.addLast(valor)		[16,4,13,2,6,7,9]
+
+p.pop()			12	[18,5,3]
+l.addLast(valor)		[16,4,13,2,6,7,9,12]
+
+p.pop()			18	[5,3]
+l.addLast(valor)		[16,4,13,2,6,7,9,12,18]
+
+p.pop()			5	[3]
+l.addLast(valor)		[16,4,13,2,6,7,9,12,18,5]
+
+p.pop()			3	[]
+l.addLast(valor)		[16,4,13,2,6,7,9,12,18,5,3]
